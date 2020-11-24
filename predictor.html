@@ -57,22 +57,29 @@
     </div>
   </nav>
 
-<br><br>
-
-<div class="h1 mb-2 bg-white text-dark">Can we predict stock prices?</div>
+<br>
 
 <div class="container">
+   
+   <div class="h1 mb-2 bg-white text-dark">Can we predict stock prices?</div>
+   
     <div class="col-sm-10">
       
-    <br><p>Using all prior mentioned features and 2008-2016 AAPL stock prices, our team ran various models to predict stock
+    <br><p>Using all prior mentioned features and 2008-2016 Apple (AAPL) stock prices, our team ran various models to predict stock
     prices from 2016-2018. The KNN model showed the best fit and is displayed below. Since KNN is used for regression here instead
     of classification, it averaged stock price points in the same neighborhood as opposed to categorizing the prices.
-    There are other models that can also be used for stock prediction, such as the LSTM Model (Long-Short-Term-Memory), which 
-    evaluates datapoints through "Gates", uses some of them, and discards others. </p>
+    There are other models that can also be used for stock prediction. One advanced example is the LSTM Model (Long-Short-Term-Memory)
+    , which evaluates datapoints through "Gates", uses some of them, and discards other data to construct models. </p>
 
      <br><img src="Images/Predictor1.png" alt="Responsive Image" class="mx-auto d-block" style="width:800px; height:400px;">
      <br><img src="Images/Predictor2.png" alt="Responsive Image" class="mx-auto d-block" style="width:800px; height:400px;"> 
-     <br><br><br>
+     <br>
+     
+     <p>The Green line shows real Apple stock from 2008 to 2016. The yellow line shows the KNN prediction of stock price.
+     The blue line under the yellow line shows the real price from '16-'18. While the chart itself shows a very close fit, 
+     in reality the KNN was accurate in terms of basic trends in the stock price, but did not time the peaks/troughs in the 
+     stock price trends as well. So, as a predictor, the KNN would be a decent tool to predict AAPl stock over a period of 
+     weeks, but not over a period of days.</p>
       
     </div>
       
